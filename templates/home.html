@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  
+  <style>
+        body {
+        background-color: #F3EBF6;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    @media (max-width: 600px) {
+        .main {
+            border-radius: 0px;
+        }
+    }
+    .main {
+        background-color: #FFFFFF;
+        width: 400px;
+        height: 90px;
+        margin: 4em auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 20px 2px rgba(0, 0, 0, 0.14);
+    }
+    .submit {
+      cursor: pointer;
+        border-radius: 5em;
+        color: #fff;
+        background: linear-gradient(to right, #9C27B0, #E040FB);
+        border: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 35%;
+        font-size: 13px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    }
+</style>
+</head>
+<body>
+    <form action="{{url_for('logout')}}" >
+    <div class="main">
+    <h2 style="text-align: center; margin-top: 25px; color: rgb(85, 12, 124); padding-top: 25px;">Welcome {{uname}}</h2>
+    <button class="submit" type="submit" style="margin-top: 25px;">Logout</button>
+</div>
+</form>
+
+</body>
+</html>
